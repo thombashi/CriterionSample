@@ -29,7 +29,7 @@ ParameterizedTest(struct parameter_tuple *tup, parameterized_test, add) {
     fflush(stdout);
 
     result = add(tup->lhs, tup->rhs);
-    cr_assert_neq(
+    cr_assert_eq(
         result, tup->expected,
         "Failed: lhs=%d, rhs=%d, result=%d, expected=%d\n", 
         tup->lhs, tup->rhs, result, tup->expected);
