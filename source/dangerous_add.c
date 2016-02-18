@@ -1,22 +1,29 @@
 #include <stdlib.h>
+#include <stdint.h>
 #include "dangerous_add.h"
 
 int dangerous_add(int lhs, int rhs)
 {
     int sum;
     
-	sum = lhs + rhs;
+    sum = lhs + rhs;
+    
     if (sum == 0)
-    {
         exit(1);
-    } 
-    else if (sum < 0)
-    {
+    
+    if (sum < 0)
         abort();
-    }
+    
+    return sum;
 }
 
-int* a()
+uint64_t dangerous_add_2(int lhs, int rhs)
 {
-    return (int*)malloc((uint)-1);
+    if (lhs < 0)
+        exit(1);
+
+    if (rhs < 0)
+        abort();
+        
+	return lhs + rhs;
 }
