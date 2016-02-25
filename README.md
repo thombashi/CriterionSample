@@ -6,18 +6,18 @@ https://github.com/Snaipe/Criterion
 
 
 # Build
-e.g. Build test_parameterize
-
 ```console
-cd test_parameterize/
+git clone https://github.com/thombashi/CriterionSample.git
 cmake .
 make
 ```
 
 
 # Running tests
+e.g. Running test_parameterize
+
 ```console
-./run_test.sh
+test_parameterize/run_test.sh
 [----] Criterion v2.2.0
 [====] Running 1 test from parameterized_test:
 [RUN ] parameterized_test::add
