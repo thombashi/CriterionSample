@@ -7,12 +7,12 @@ include_directories(
     ${PROJECT_ROOT}/include
 )
 
-add_executable(test
+add_executable(test_abnormal
     ${SOURCE_ROOT}/dangerous_add.c
     test_exit.c
     test_signal.c
 )
 
-target_link_libraries(test
+target_link_libraries(test_abnormal
     criterion
 )

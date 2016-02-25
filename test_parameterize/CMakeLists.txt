@@ -7,11 +7,11 @@ include_directories(
     ${PROJECT_ROOT}/include
 )
 
-add_executable(test
+add_executable(test_parameterize
     ${SOURCE_ROOT}/add.c
     test_parameterize.c
 )
 
-target_link_libraries(test
+target_link_libraries(test_parameterize
     criterion
 )

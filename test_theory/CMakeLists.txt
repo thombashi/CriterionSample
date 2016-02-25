@@ -7,11 +7,11 @@ include_directories(
     ${PROJECT_ROOT}/include
 )
 
-add_executable(test
+add_executable(test_theory
     ${SOURCE_ROOT}/dangerous_add.c
     test_theory.c
 )
 
-target_link_libraries(test
+target_link_libraries(test_theory
     criterion
 )
